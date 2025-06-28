@@ -1,11 +1,6 @@
 export default function CertificationsSection() {
   const certifications = [
-    {
-      title: "ReactJS Course",
-      organization: "DevTown",
-      description: "Comprehensive React.js training covering components, hooks, state management, and modern development practices.",
-      icon: "⚛️"
-    },
+ 
     {
       title: "Front-End Development",
       organization: "Jawan Pakistan", 
@@ -13,10 +8,16 @@ export default function CertificationsSection() {
       icon: "💻"
     },
     {
-      title: "Student Ambassador",
-      organization: "Microsoft Learn",
-      description: "Earned certification to enhance skills in Microsoft technologies and modern development practices.",
+      title: "Back-End Development",
+      organization: "Decotech",
+      description: "Complete bront-end development course covering JavaScript,NodeJS and modern frameworks.",
       icon: "🏆"
+    },
+       {
+      title: "ReactJS Course",
+      organization: "DevTown",
+      description: "Comprehensive React.js training covering components, hooks, state management, and modern development practices.",
+      icon: "⚛️"
     }
   ];
 
