@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210, 8%, 12%);
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(210, 8%, 16%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --popover: hsl(210, 8%, 12%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --card: hsl(210, 8%, 16%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --border: hsl(215, 27.9%, 16.9%);
+  --input: hsl(215, 27.9%, 16.9%);
+  --primary: hsl(45, 93%, 47%);
+  --primary-foreground: hsl(210, 8%, 12%);
+  --secondary: hsl(210, 8%, 16%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(210, 8%, 16%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(45, 93%, 47%);
+  --radius: 0.5rem;
+  
+  /* Custom colors matching the design */
+  --dark-bg: rgb(30, 30, 30);
+  --dark-secondary: rgb(40, 40, 40);
+  --dark-card: rgb(50, 50, 50);
+  --yellow-accent: yellow;
+}
+
+.light {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 8%, 12%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 13.8%, 34.1%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 8%, 12%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 8%, 12%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --primary: hsl(45, 93%, 47%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(210, 8%, 12%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(210, 8%, 12%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(45, 93%, 47%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body.light {
+    background-color: white;
+    color: rgb(30, 30, 30);
+  }
+}
+
+@layer utilities {
+  .skill-progress {
+    animation: skill-fill 2s ease-out forwards;
+  }
+
+  @keyframes skill-fill {
+    from {
+      width: 0%;
+    }
+    to {
+      width: var(--skill-width);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--dark-secondary);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--yellow-accent);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F59E0B;
+  }
+}

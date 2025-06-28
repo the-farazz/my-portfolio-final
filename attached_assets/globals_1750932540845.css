@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-white text-gray-900;
+  }
+}
+
+@layer utilities {
+  .skill-progress {
+    animation: skill-fill 2s ease-out forwards;
+  }
+
+  @keyframes skill-fill {
+    from {
+      width: 0%;
+    }
+    to {
+      width: var(--skill-width);
+    }
+  }
+}
