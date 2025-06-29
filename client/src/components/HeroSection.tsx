@@ -39,17 +39,12 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
               href={resume}
-              download="FarazAlam(BSCS).pdf"
-              className="flex items-center"
+              download="Faraz(BSCS)-UoK-UBIT.pdf"
+              className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
             >
-              <button
-                // onClick={() => handleScrollToSection("#projects")}
-                className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
-              >
-
+           
                 <Download className="w-4 h-4 mr-2" />
                 Resume
-              </button>
             </a>
             {/* <button
               onClick={() => handleScrollToSection('#projects')}
