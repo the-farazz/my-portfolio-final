@@ -37,19 +37,20 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <button
-              // onClick={() => handleScrollToSection("#projects")}
-              className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
+            <a
+              href={resume}
+              download="FarazAlam(BSCS).pdf"
+              className="flex items-center"
             >
-              <a
-                href={resume}
-                download="FarazAlam(BSCS).pdf"
-                className="flex items-center"
+              <button
+                // onClick={() => handleScrollToSection("#projects")}
+                className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
               >
+
                 <Download className="w-4 h-4 mr-2" />
                 Resume
-              </a>
-            </button>
+              </button>
+            </a>
             {/* <button
               onClick={() => handleScrollToSection('#projects')}
               className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
