@@ -42,7 +42,7 @@ export default function CertificationsSection() {
              </div>
               <h3 className="flex justify-center text-xl font-semibold text-[yellow] mb-3">{cert.title}</h3>
               <p className="flex justify-center text-white mb-3 light:text-gray-600">{cert.organization}</p>
-              <p className="flex justify-center text-gray-500 text-sm light:text-gray-500">{cert.description}</p>
+              <p className=" text-gray-500 text-center  text-sm light:text-gray-500">{cert.description}</p>
             </div>
           ))}
         </div>
