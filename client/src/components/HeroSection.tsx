@@ -2,6 +2,8 @@ import { Eye, Mail, Download } from "lucide-react";
 import DP from "@/asset/DP.jpeg";
 import DP2 from "@/asset/DP2.jpg";
 import resume from "../asset/Faraz(BSCS)-UoK-UBIT.pdf";
+import resume2 from "../../public/Faraz(BSCS)-UoK-UBIT.pdf";
+import Test from "../asset/Test";
 
 export default function HeroSection() {
   const handleScrollToSection = (sectionId: string) => {
@@ -37,8 +39,9 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+         
             <a
-              href={resume}
+              href={resume2}
               download="Faraz(BSCS)-UoK-UBIT"
               className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
             >
