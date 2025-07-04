@@ -1,6 +1,7 @@
 import { Eye, Mail, Download } from "lucide-react";
 import DP from "@/asset/DP.jpeg";
 import DP2 from "@/asset/DP2.jpg";
+import DP3 from "@/asset/DP3.jpg";
 import resume from "../asset/Faraz(BSCS)-UoK-UBIT.pdf";
 import resume2 from "../../public/Faraz(BSCS)-UoK-UBIT.pdf";
 import Test from "../asset/Test";
