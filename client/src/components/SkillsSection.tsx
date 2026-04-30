@@ -22,25 +22,25 @@ export default function SkillsSection() {
   }, []);
 
   const frontendSkills = [
-    { name: 'React.js', level: 95, icon: '' },
-    { name: 'JavaScript (ES6+)', level: 90, icon: '' },
-    { name: 'TypeScript', level: 85, icon: '' },
-    { name: 'Tailwind CSS', level: 88, icon: '' },
+    { name: 'React.js & Next.js', level: 95, icon: '⚛️' },
+    { name: 'JavaScript (ES6+)', level: 90, icon: '🟨' },
+    { name: 'TypeScript', level: 85, icon: '🟦' },
+    { name: 'Tailwind CSS & MUI', level: 88, icon: '🎨' },
   ];
 
   const toolsSkills = [
-    { name: 'Next.js', level: 80, icon: '' },
-    { name: 'Redux Toolkit', level: 78, icon: '' },
-    { name: 'Material-UI', level: 92, icon: '' },
-    { name: 'Git & GitHub', level: 87, icon: '' },
+    { name: 'Redux Toolkit', level: 80, icon: '🔄' },
+    { name: 'MySQL & PostgreSQL', level: 75, icon: '🗄️' },
+    { name: 'Git & GitHub', level: 87, icon: '📝' },
+    { name: 'AI & Dev Tools', level: 92, icon: '🤖' },
   ];
 
   const skillIcons = [
+    { name: 'Next.js', icon: '▲' },
     { name: 'React', icon: '⚛️' },
     { name: 'JavaScript', icon: '🟨' },
-    { name: 'HTML5', icon: '🌐' },
-    { name: 'CSS3', icon: '🎨' },
-    { name: 'Node.js', icon: '🟢' },
+    { name: 'Tailwind', icon: '🎨' },
+    { name: 'Redux', icon: '🔄' },
     { name: 'GitHub', icon: '📝' },
   ];
 

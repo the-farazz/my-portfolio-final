@@ -35,7 +35,7 @@ export default function HeroSection() {
           </h1>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl light:text-gray-500">
             Building engaging digital experiences with modern web technologies.
-            Passionate about creating user-friendly websites and applications.
+            Specializing in high-performance React and Next.js applications with a focus on scalability and premium UI/UX.
           </p>
 
           {/* CTA Buttons */}

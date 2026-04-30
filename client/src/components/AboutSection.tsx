@@ -10,12 +10,12 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* About Content */}
           <div className="space-y-6">
-            <h3 className="text-4xl font-semibold text-[yellow]">Aspiring Software Engineer</h3>
+            <h3 className="text-4xl font-semibold text-[yellow]">Software Engineer</h3>
             <p className="text-gray-300 leading-relaxed light:text-gray-600">
-              I have completed my Bachelor of Science in Computer Science (BSCS) from the University of Karachi - UBIT, where I built a strong foundation in software engineering principles and modern web technologies.
+              I am a Software Engineer with a BS in Computer Science from the University of Karachi - UBIT. I specialize in building high-performance, responsive web applications using modern technologies like Next.js, React, and Tailwind CSS.
             </p>
             <p className="text-gray-300 leading-relaxed light:text-gray-600">
-              My expertise lies in ReactJS, Tailwind CSS, and Material UI, with a passion for creating responsive, user centric web applications. I believe in writing clean, maintainable code and staying updated with the latest industry trends
+              My expertise lies in developing complex business systems (ERP/CRM) and e-commerce platforms. I am passionate about writing clean code and leveraging AI-powered development tools like Google Antigravity to accelerate workflows and deliver premium user experiences.
             </p>
             
             {/* Key Stats */}

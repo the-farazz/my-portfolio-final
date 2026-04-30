@@ -1,43 +1,43 @@
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Front-End Developer",
-      company: "Karsaaz Solutions",
-      period: "January 2025 – Present",
-      description: "Currently contributing to the development and enhancement of a comprehensive ERP system using modern frameworks and tools, with a focus on scalability, efficiency, and seamless user experiences.",
+      title: "Front End Developer – Junior Developer",
+      company: "Karsaaz Entire Business Solutions",
+      period: "Jan. 2025 – Present",
+      description: "Leading frontend development for complex business solutions including ERP and CRM systems.",
       achievements: [
-        "• Developing dynamic ERP modules using NextJS and TypeScript",
-        "• Implementing responsive designs with Tailwind CSS",
-        "• Building reusable component libraries"
+        "• Currently building a CRM platform frontend using Next.js, consuming Java-based REST APIs connected to a PostgreSQL database, with 50+ screens including a comprehensive User Management module.",
+        "• Developed responsive ERP system interfaces using Next.js, Tailwind CSS, and Material UI, integrating with FastAPI (Python)-based REST APIs.",
+        "• Built reusable, modular component architectures to streamline development across both ERP and CRM systems.",
+        "• Collaborated closely with backend teams to ensure seamless API integration and consistent data flow."
       ],
-      technologies: [ "Next.js", "TypeScript", "Tailwind"],
+      technologies: ["Next.js", "Redux", "Tailwind CSS", "Material UI", "FastAPI"],
       current: true
     },
     {
-      title: "Front-End Developer", 
+      title: "Front End Developer – Internship", 
       company: "Xenasys Pvt. Ltd",
-      period: "October 2024 – December 2024",
-      description: "Contributed to the development of a Franchise Management System, focusing on responsive design, user-centric interfaces, and efficient state management. Collaborated with cross-functional teams to deliver high quality solutions.",
+      period: "Oct. 2024 – Dec. 2024",
+      description: "Contributed to the development of a Franchise Management System (FMS).",
       achievements: [
-        "• Delivered 10+ screens as part of the live Franchise Management System project.", 
-        "• Built responsive React components with Material-UI and Tailwind",
-        "• Optimized application performance and loading times"
+        "• Developed 10+ responsive and interactive screens for the Franchise Management System using ReactJS, Tailwind CSS, and Material UI.", 
+        "• Contributed to a live project, ensuring high standards for user experience and interface consistency.",
+        "• Adapted UI components to reflect evolving project requirements in an agile development environment."
       ],
-      technologies: ["React.js", "Material-UI", "Tailwind"],
+      technologies: ["React.js", "Tailwind CSS", "Material UI"],
       current: false
     },
     {
-      title: "Junior Front-End Developer",
+      title: "Front End Developer – Internship",
       company: "DevLogix", 
-      period: "July 2024 – October 2024",
-      description: "Kickstarted my professional journey by contributing to the development of an HR Management System. Gained hands-on experience with modern web development practices while collaborating with a dynamic team.",
+      period: "Jul. 2024 – Oct. 2024",
+      description: "Gained hands-on experience in building HR Management Systems.",
       achievements: [
-        "• Built responsive interfaces using React.js.",
-        "• Used Git and GitHub for version control and collaboration.",
-        "• Delivered designs precisely as provided in Figma."
+        "• Developed responsive, user-friendly interfaces for the HR Management System using ReactJS, Tailwind CSS, and Material UI.",
+        "• Collaborated with the team from project inception, contributing to requirement gathering and SRS documentation.",
+        "• Gained hands-on experience with the full software development lifecycle from initial planning to implementation."
       ],
-            technologies: ["React.js", "Material-UI", "Tailwind"],
-
+      technologies: ["React.js", "Tailwind CSS", "Material UI", "Git"],
       current: false
     }
   ];
