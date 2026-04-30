@@ -67,7 +67,7 @@
   body {
     @apply font-sans antialiased;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--dark-bg);
+    background-color: rgb(30, 30, 30);
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
@@ -75,6 +75,20 @@
   body.light {
     background-color: white;
     color: rgb(30, 30, 30);
+  }
+
+  /* Global light mode text fixes */
+  .light .text-white,
+  .light h1,
+  .light h2,
+  .light h3:not(.text-\[yellow\]),
+  .light h4:not(.text-\[yellow\]) {
+    color: rgb(30, 30, 30);
+  }
+
+  .light .text-gray-300,
+  .light .text-gray-400 {
+    color: rgb(75, 85, 99); /* gray-600 */
   }
 }
 

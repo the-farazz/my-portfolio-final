@@ -175,7 +175,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed light:bg-gray-900 light:text-white light:hover:bg-[yellow] light:hover:text-gray-900"
               >
                 <Mail className="w-4 h-4 mr-2" />
                 {isLoading ? 'Sending...' : 'Send Message'}

@@ -98,7 +98,7 @@ export default function ProjectsSection() {
 
         {/* View All Projects Button */}
         <div className="text-center">
-          <button className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300">
+          <button className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 light:bg-gray-900 light:text-white light:hover:bg-[yellow] light:hover:text-gray-900">
             View All Projects
           </button>
         </div>

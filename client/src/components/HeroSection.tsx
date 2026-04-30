@@ -44,7 +44,7 @@ export default function HeroSection() {
             <a
               href={resume2}
               download="Faraz(BSCS)-UoK-UBIT"
-              className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
+              className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center light:bg-gray-900 light:text-white light:hover:bg-[yellow] light:hover:text-gray-900"
             >
            
                 <Download className="w-4 h-4 mr-2" />
