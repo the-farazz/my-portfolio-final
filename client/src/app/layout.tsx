@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   description: 'Faraz Alam - Software Engineer with expertise in ReactJS, Tailwind CSS, and modern web technologies. View projects, skills, and contact info.',
   keywords: 'Faraz Alam, Software Engineer, React.js, JavaScript, TypeScript, Tailwind CSS, Web Development, Portfolio, Full Stack Developer',
   icons: {
-    icon: '/DP3.jpg',
+    icon: '/DP4.jpeg',
   },
   openGraph: {
     title: 'Faraz Alam | Software Engineer',
     description: 'Explore the portfolio of Faraz Alam — Software Engineer skilled in ReactJS and modern frontend tools.',
     type: 'website',
     url: 'https://farazalamportfolio.vercel.app/',
-    images: ['https://farazalamportfolio.vercel.app/DP3.jpg'],
+    images: ['https://farazalamportfolio.vercel.app/DP4.jpeg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Faraz Alam | Software Engineer',
     description: 'Explore the portfolio of Faraz Alam — Software Engineer skilled in ReactJS and modern frontend tools.',
-    images: ['https://farazalamportfolio.vercel.app/DP3.jpg'],
+    images: ['https://farazalamportfolio.vercel.app/DP4.jpeg'],
   },
 };
 
