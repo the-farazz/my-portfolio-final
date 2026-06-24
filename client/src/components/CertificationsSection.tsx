@@ -1,25 +1,6 @@
+import { certifications } from '@/data/certifications';
+
 export default function CertificationsSection() {
-  const certifications = [
- 
-    {
-      title: "Front-End Development",
-      organization: "Jawan Pakistan", 
-      description: "Complete front-end development course covering HTML, CSS, JavaScript, and modern frameworks.",
-      icon: "💻"
-    },
-    {
-      title: "Back-End Development",
-      organization: "Decotech",
-      description: "Complete bront-end development course covering JavaScript,NodeJS and modern frameworks.",
-      icon: "🏆"
-    },
-       {
-      title: "ReactJS Course",
-      organization: "DevTown",
-      description: "Comprehensive React.js training covering components, hooks, state management, and modern development practices.",
-      icon: "⚛️"
-    }
-  ];
 
   return (
     <section className="py-20 px-4 lg:px-8 bg-[rgb(40,40,40)] light:bg-gray-50">

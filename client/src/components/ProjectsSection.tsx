@@ -1,41 +1,16 @@
 import { Github, ExternalLink } from 'lucide-react';
+import { projects } from '@/data/projects';
+
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  githubLink: string;
+  liveLink: string;
+}
 
 export default function ProjectsSection() {
-  const projects = [
-    {
-      title: "Enterprise Resource Planning (ERP – Karsaaz)",
-      description: "Built responsive ERP interfaces with seamless FastAPI integration and efficient Redux state management. Currently developing a CRM module with 50+ screens including a full User Management system consuming Java-based REST APIs with PostgreSQL.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Next.js", "Tailwind CSS", "Material UI", "Redux", "FastAPI"],
-      githubLink: "#",
-      liveLink: "#"
-    },
-    {
-      title: "Zanora Fashion (E-Commerce)",
-      description: "Built a fully responsive fashion e-commerce frontend featuring product listings, filtering, and a shopping cart with Redux state management. Integrated a WhatsApp-based order redirect flow for seamless customer-to-seller order placement.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Next.js", "Tailwind CSS", "Redux", "WhatsApp API"],
-      githubLink: "#",
-      liveLink: "https://zanora-fashion.vercel.app"
-    },
-    {
-      title: "Franchise Management System (FMS – Xenasys)", 
-      description: "Developed 10+ responsive screens for a Zong Franchise Management System including Retailer Easy Load Records and SIM purchase tracking modules. Ensured high standards of UI consistency and user experience.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Next.js", "Tailwind CSS", "Material UI"],
-      githubLink: "#",
-      liveLink: "#"
-    },
-    {
-      title: "Human Resource System (HRS – DevLogix)",
-      description: "Developed the landing page and contributed to multiple UI screens for an HR Management System. Built responsive and reusable components ensuring consistent user experience across the application.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Next.js", "Tailwind CSS", "Material UI"],
-      githubLink: "#",
-      liveLink: "#"
-    }
-  ];
-
   return (
     <section id="projects" className="py-20 px-4 lg:px-8 bg-[rgb(40,40,40)] light:bg-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -49,7 +24,7 @@ export default function ProjectsSection() {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {projects.map((project, index) => (
+          {projects.map((project: Project, index: number) => (
             <div
               key={index}
               className="bg-[rgb(30,30,30)] rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl light:bg-white light:border light:border-gray-200"
@@ -57,6 +32,7 @@ export default function ProjectsSection() {
               <img 
                 src={project.image}
                 alt={project.title}
+                loading="lazy"
                 className="w-full h-48 object-cover"
               />
               
@@ -66,7 +42,7 @@ export default function ProjectsSection() {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, i) => (
+                  {project.technologies.map((tech: string, i: number) => (
                     <span
                       key={i}
                       className="px-3 py-1 bg-[rgb(40,40,40)] text-[yellow] text-sm rounded-full light:bg-gray-100 light:text-gray-700"
@@ -78,6 +54,7 @@ export default function ProjectsSection() {
                 <div className="flex space-x-4">
                   <a 
                     href={project.githubLink}
+                    aria-label={`View source code for ${project.title}`}
                     className="text-[yellow] hover:text-white transition-colors duration-300 flex items-center light:hover:text-gray-700"
                   >
                     <Github className="w-4 h-4 mr-2" />
@@ -85,6 +62,7 @@ export default function ProjectsSection() {
                   </a>
                   <a 
                     href={project.liveLink}
+                    aria-label={`View live demo for ${project.title}`}
                     className="text-[yellow] hover:text-white transition-colors duration-300 flex items-center light:hover:text-gray-700"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
