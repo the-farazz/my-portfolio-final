@@ -2,7 +2,7 @@ import { experiences } from '@/data/experience';
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 px-4 lg:px-8">
+    <section id="experience" className="py-12 lg:py-20 px-4 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white light:text-gray-900">

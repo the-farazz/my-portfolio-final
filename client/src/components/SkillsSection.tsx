@@ -72,7 +72,7 @@ export default function SkillsSection() {
   );
 
   return (
-    <section id="skills" className="py-20 px-4 lg:px-8" ref={sectionRef}>
+    <section id="skills" className="py-12 lg:py-20 px-4 lg:px-8" ref={sectionRef}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white light:text-gray-900">

@@ -72,7 +72,7 @@ export default function ContactSection() {
     'w-full px-4 py-3 bg-[rgb(30,30,30)] border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[yellow] transition-colors duration-300 light:bg-white light:border-gray-300 light:text-gray-900';
 
   return (
-    <section id="contact" className="py-20 px-4 lg:px-8">
+    <section id="contact" className="py-12 lg:py-20 px-4 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white light:text-gray-900">Get In Touch</h2>

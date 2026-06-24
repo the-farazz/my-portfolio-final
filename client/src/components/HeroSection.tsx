@@ -15,11 +15,11 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-20 px-4 lg:px-8"
+      className="min-h-screen flex items-center justify-center pt-12 lg:pt-20 px-4 lg:px-8"
     >
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
-        <div className="text-center lg:text-left slide-up">
+        <div className="order-2 lg:order-1 text-center lg:text-left slide-up">
           <p className="text-lg text-gray-300 mb-4 light:text-gray-600">
             Hello,
           </p>
@@ -64,7 +64,7 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Image */}
-        <div className="flex justify-center lg:justify-end fade-in">
+        <div className="order-1 lg:order-2 flex justify-center lg:justify-end fade-in">
           <div className="relative">
             <img
               src="/DP4.jpeg"

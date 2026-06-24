@@ -18,7 +18,7 @@ const competencies = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4 lg:px-8 bg-[rgb(40,40,40)] light:bg-gray-50">
+    <section id="about" className="py-12 lg:py-20 px-4 lg:px-8 bg-[rgb(40,40,40)] light:bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white light:text-gray-900">
