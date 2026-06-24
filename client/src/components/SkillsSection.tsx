@@ -14,27 +14,27 @@ interface Skill {
 
 const frontendSkills: Skill[] = [
   { name: 'React.js & Next.js', level: 93, Icon: Code2 },
-  { name: 'JavaScript (ES6+)',  level: 90, Icon: Braces },
-  { name: 'TypeScript',         level: 85, Icon: FileCode },
+  { name: 'JavaScript (ES6+)', level: 90, Icon: Braces },
+  { name: 'TypeScript', level: 85, Icon: FileCode },
   { name: 'Tailwind CSS & MUI', level: 90, Icon: Palette },
-  { name: 'HTML / CSS',         level: 95, Icon: Globe },
-  { name: 'Bootstrap',          level: 78, Icon: Layout },
+  { name: 'HTML / CSS', level: 95, Icon: Globe },
+  { name: 'Bootstrap', level: 78, Icon: Layout },
 ];
 
 const toolsSkills: Skill[] = [
   { name: 'Redux Toolkit', level: 82, Icon: RefreshCw },
-  { name: 'Node.js',       level: 70, Icon: Server },
-  { name: 'MySQL',         level: 72, Icon: Database },
-  { name: 'Git & GitHub',  level: 88, Icon: GitBranch },
-  { name: 'Jira',          level: 75, Icon: ClipboardList },
-  { name: 'AI & Dev Tools',level: 92, Icon: Bot },
+  { name: 'Node.js', level: 70, Icon: Server },
+  { name: 'MySQL', level: 72, Icon: Database },
+  { name: 'Git & GitHub', level: 88, Icon: GitBranch },
+  { name: 'Jira', level: 75, Icon: ClipboardList },
+  { name: 'AI & Dev Tools', level: 92, Icon: Bot },
 ];
 
 const exploringSkills = [
-  { name: 'OOP',                Icon: Layers },
-  { name: 'Java',               Icon: Coffee },
-  { name: 'Kotlin',             Icon: Target },
-  { name: 'Android Development',Icon: Smartphone },
+  { name: 'OOP', Icon: Layers },
+  { name: 'Java', Icon: Coffee },
+  { name: 'Kotlin', Icon: Target },
+  { name: 'Android Development', Icon: Smartphone },
 ];
 
 export default function SkillsSection() {
@@ -89,7 +89,7 @@ export default function SkillsSection() {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-[yellow]">Backend & Tools</h3>
+            <h3 className="text-xl font-semibold mb-6 text-[yellow]">Tools & Frameworks</h3>
             <div className="space-y-5">
               {toolsSkills.map((skill, i) => <SkillBar key={skill.name} skill={skill} index={i} />)}
             </div>
