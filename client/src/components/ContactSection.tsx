@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { Mail, Github, Linkedin, Twitter, Phone } from 'lucide-react';
 import { useEmailJS } from '@/hooks/use-emailjs';
@@ -193,3 +194,4 @@ export default function ContactSection() {
     </section>
   );
 }
+

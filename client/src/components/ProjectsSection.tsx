@@ -1,3 +1,4 @@
+'use client';
 import { Github, ExternalLink } from 'lucide-react';
 import { keyProjects, vibeCodingProjects, type Project } from '@/data/projects';
 
@@ -105,3 +106,4 @@ export default function ProjectsSection() {
     </section>
   );
 }
+

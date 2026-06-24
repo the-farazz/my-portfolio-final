@@ -1,3 +1,4 @@
+'use client';
 import { experiences } from '@/data/experience';
 
 export default function ExperienceSection() {
@@ -73,3 +74,4 @@ export default function ExperienceSection() {
     </section>
   );
 }
+

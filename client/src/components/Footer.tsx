@@ -1,3 +1,4 @@
+'use client';
 export default function Footer() {
   const footerLinks = [
     { href: '#home', label: 'Home' },
@@ -44,3 +45,4 @@ export default function Footer() {
     </footer>
   );
 }
+

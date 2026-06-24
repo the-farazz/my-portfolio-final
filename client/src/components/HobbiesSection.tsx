@@ -1,3 +1,4 @@
+'use client';
 export default function HobbiesSection() {
   const hobbies = [
     {
@@ -45,3 +46,4 @@ export default function HobbiesSection() {
     </section>
   );
 }
+

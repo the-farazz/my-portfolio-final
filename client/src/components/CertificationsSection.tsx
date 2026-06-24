@@ -1,3 +1,4 @@
+'use client';
 import { Monitor, Server, Code2, ExternalLink } from 'lucide-react';
 import { certifications, CERTIFICATES_DRIVE_LINK } from '@/data/certifications';
 import type { LucideIcon } from 'lucide-react';
@@ -52,3 +53,4 @@ export default function CertificationsSection() {
     </section>
   );
 }
+

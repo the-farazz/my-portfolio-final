@@ -10,11 +10,11 @@ export interface EmailData {
   email: string;
 }
 
-const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  || '-FzhskqiTwcouVy1c';
-const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || 'service_or2nn9k';
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_yfan3xb';
+const PUBLIC_KEY  = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY  || '-FzhskqiTwcouVy1c';
+const SERVICE_ID  = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID  || 'service_or2nn9k';
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_yfan3xb';
 
-const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbzboEUrLbKpJ-B7FJ-3fLFZrUcIbxmX-g3xABtAlKWwibFFvn5weuyizn3ukx74HZs/exec';
+const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbzboEUrLbKpJ-B7FJ-3fLFZrUcIbxmX-g3xABtAlKWwibFFvn5weuyizn3ukx74HZs/exec';
 
 export function useEmailJS() {
   const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +25,7 @@ export function useEmailJS() {
       emailjs.init(PUBLIC_KEY);
       
       // 1. Send via EmailJS
-      const emailPromise = emailjs.send(SERVICE_ID, TEMPLATE_ID, data as Record<string, unknown>);
+      const emailPromise = emailjs.send(SERVICE_ID, TEMPLATE_ID, data as unknown as Record<string, unknown>);
 
       // 2. Save to Google Sheets (if URL is provided)
       let sheetPromise = Promise.resolve() as Promise<any>;

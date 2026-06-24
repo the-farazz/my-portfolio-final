@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useRef, useState } from 'react';
 import {
   Code2, Braces, FileCode, Palette, Globe, Layout,
@@ -124,3 +125,4 @@ export default function SkillsSection() {
     </section>
   );
 }
+

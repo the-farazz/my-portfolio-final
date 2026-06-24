@@ -1,3 +1,4 @@
+'use client';
 import {
   Code2,
   Braces,
@@ -78,3 +79,4 @@ export default function AboutSection() {
     </section>
   );
 }
+

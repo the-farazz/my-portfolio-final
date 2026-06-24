@@ -1,3 +1,4 @@
+'use client';
 import { GraduationCap, BookOpen, Code2, Brain, TrendingUp } from 'lucide-react';
 
 const education = [

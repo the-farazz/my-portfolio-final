@@ -1,3 +1,4 @@
+'use client';
 export default function FutureGoalsSection() {
   const goals = [
     {
@@ -50,3 +51,4 @@ export default function FutureGoalsSection() {
     </section>
   );
 }
+

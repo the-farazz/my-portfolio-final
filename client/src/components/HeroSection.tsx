@@ -1,3 +1,4 @@
+'use client';
 import { Mail, Download, Code2 } from "lucide-react";
 
 const RESUME_URL = "/Faraz_BSCS_UoK_UBIT.pdf";
@@ -83,3 +84,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

@@ -1,3 +1,4 @@
+'use client';
 import { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
@@ -117,3 +118,4 @@ export default function Navigation() {
     </nav>
   );
 }
+
