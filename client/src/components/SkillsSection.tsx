@@ -1,34 +1,40 @@
 import { useEffect, useRef, useState } from 'react';
+import {
+  Code2, Braces, FileCode, Palette, Globe, Layout,
+  RefreshCw, Server, Database, GitBranch, ClipboardList,
+  Bot, Coffee, Target, Smartphone, Layers,
+  type LucideIcon,
+} from 'lucide-react';
 
 interface Skill {
   name: string;
   level: number;
-  icon: string;
+  Icon: LucideIcon;
 }
 
 const frontendSkills: Skill[] = [
-  { name: 'React.js & Next.js', level: 93, icon: '⚛️' },
-  { name: 'JavaScript (ES6+)', level: 90, icon: '🟨' },
-  { name: 'TypeScript', level: 85, icon: '🟦' },
-  { name: 'Tailwind CSS & Material UI', level: 90, icon: '🎨' },
-  { name: 'HTML / CSS', level: 95, icon: '🌐' },
-  { name: 'Bootstrap', level: 78, icon: '🅱️' },
+  { name: 'React.js & Next.js', level: 93, Icon: Code2 },
+  { name: 'JavaScript (ES6+)',  level: 90, Icon: Braces },
+  { name: 'TypeScript',         level: 85, Icon: FileCode },
+  { name: 'Tailwind CSS & MUI', level: 90, Icon: Palette },
+  { name: 'HTML / CSS',         level: 95, Icon: Globe },
+  { name: 'Bootstrap',          level: 78, Icon: Layout },
 ];
 
 const toolsSkills: Skill[] = [
-  { name: 'Redux Toolkit', level: 82, icon: '🔄' },
-  { name: 'Node.js', level: 70, icon: '🟢' },
-  { name: 'MySQL', level: 72, icon: '🗄️' },
-  { name: 'Git & GitHub', level: 88, icon: '📝' },
-  { name: 'Jira', level: 75, icon: '📋' },
-  { name: 'AI & Dev Tools', level: 92, icon: '🤖' },
+  { name: 'Redux Toolkit', level: 82, Icon: RefreshCw },
+  { name: 'Node.js',       level: 70, Icon: Server },
+  { name: 'MySQL',         level: 72, Icon: Database },
+  { name: 'Git & GitHub',  level: 88, Icon: GitBranch },
+  { name: 'Jira',          level: 75, Icon: ClipboardList },
+  { name: 'AI & Dev Tools',level: 92, Icon: Bot },
 ];
 
 const exploringSkills = [
-  { name: 'OOP', icon: '🧩' },
-  { name: 'Java', icon: '☕' },
-  { name: 'Kotlin', icon: '🎯' },
-  { name: 'Android Development', icon: '📱' },
+  { name: 'OOP',                Icon: Layers },
+  { name: 'Java',               Icon: Coffee },
+  { name: 'Kotlin',             Icon: Target },
+  { name: 'Android Development',Icon: Smartphone },
 ];
 
 export default function SkillsSection() {
@@ -37,26 +43,18 @@ export default function SkillsSection() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
+      ([entry]) => { if (entry.isIntersecting) setIsVisible(true); },
       { threshold: 0.3 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
   const SkillBar = ({ skill, index }: { skill: Skill; index: number }) => (
-    <div className="skill-item">
+    <div>
       <div className="flex justify-between items-center mb-2">
         <span className="text-gray-300 font-medium flex items-center light:text-gray-700 text-sm">
-          <span className="text-[yellow] mr-3">{skill.icon}</span>
+          <skill.Icon className="w-4 h-4 text-[yellow] mr-3 shrink-0" />
           {skill.name}
         </span>
         <span className="text-gray-400 light:text-gray-500 text-sm">{skill.level}%</span>
@@ -84,47 +82,39 @@ export default function SkillsSection() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Frontend Skills */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-[yellow]">Languages & Frontend</h3>
             <div className="space-y-5">
-              {frontendSkills.map((skill, index) => (
-                <SkillBar key={skill.name} skill={skill} index={index} />
-              ))}
+              {frontendSkills.map((skill, i) => <SkillBar key={skill.name} skill={skill} index={i} />)}
             </div>
           </div>
-
-          {/* Tools & Frameworks */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-[yellow]">Tools & Frameworks</h3>
             <div className="space-y-5">
-              {toolsSkills.map((skill, index) => (
-                <SkillBar key={skill.name} skill={skill} index={index} />
-              ))}
+              {toolsSkills.map((skill, i) => <SkillBar key={skill.name} skill={skill} index={i} />)}
             </div>
           </div>
         </div>
 
         {/* Currently Exploring */}
         <div className="mt-14">
-          <h3 className="text-xl font-semibold mb-6 text-[yellow] text-center">
-            Currently Exploring
-          </h3>
+          <h3 className="text-xl font-semibold mb-6 text-[yellow] text-center">Currently Exploring</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {exploringSkills.map((skill) => (
+            {exploringSkills.map(({ name, Icon }) => (
               <div
-                key={skill.name}
+                key={name}
                 className="flex items-center gap-2 px-5 py-3 bg-[rgb(40,40,40)] rounded-full border border-dashed border-[yellow]/50 text-white text-sm hover:border-[yellow] hover:bg-[rgb(50,50,50)] transition-all duration-300 light:bg-gray-100 light:text-gray-700"
               >
-                <span>{skill.icon}</span>
-                {skill.name}
+                <Icon className="w-4 h-4 text-[yellow]" />
+                {name}
               </div>
             ))}
           </div>
         </div>
 
         {/* AI & Dev Tools callout */}
-        <div className="mt-10 bg-[rgb(40,40,40)] p-6 rounded-xl text-center light:bg-white light:border light:border-gray-200">
+        <div className="mt-10 bg-[rgb(40,40,40)] p-6 rounded-xl flex items-center justify-center gap-3 light:bg-white light:border light:border-gray-200">
+          <Bot className="w-5 h-5 text-[yellow] shrink-0" />
           <p className="text-gray-400 text-sm light:text-gray-600">
             <span className="text-[yellow] font-semibold">AI & Dev Tools: </span>
             Google Antigravity, GitHub Copilot, ChatGPT, Claude, MCP

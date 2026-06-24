@@ -80,10 +80,8 @@ export default function ProjectsSection() {
 
         {/* Key Projects */}
         <div className="mb-14">
-          <h3 className="text-2xl font-semibold text-[yellow] mb-6 flex items-center gap-3">
-            <span className="w-8 h-0.5 bg-[yellow] inline-block"></span>
+          <h3 className="text-2xl font-semibold text-[yellow] mb-6">
             Key Projects
-            <span className="w-8 h-0.5 bg-[yellow] inline-block"></span>
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {keyProjects.map((project, index) => (
@@ -94,10 +92,8 @@ export default function ProjectsSection() {
 
         {/* Vibe Coding */}
         <div>
-          <h3 className="text-2xl font-semibold text-[yellow] mb-6 flex items-center gap-3">
-            <span className="w-8 h-0.5 bg-[yellow] inline-block"></span>
-            🚀 Vibe Coding
-            <span className="w-8 h-0.5 bg-[yellow] inline-block"></span>
+          <h3 className="text-2xl font-semibold text-[yellow] mb-6">
+            Vibe Coding
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {vibeCodingProjects.map((project, index) => (

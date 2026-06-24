@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-4 text-white light:text-gray-900">Faraz Alam</h3>
-          <p className="text-gray-400 mb-8 light:text-gray-600">Front-End Developer | React.js Specialist</p>
+          <p className="text-gray-400 mb-8 light:text-gray-600">Software Engineer | React.js Specialist</p>
           
           {/* Footer Links */}
           <div className="flex justify-center space-x-8 mb-8">
@@ -36,7 +36,7 @@ export default function Footer() {
 
           <div className="border-t border-gray-700 pt-8 light:border-gray-300">
             <p className="text-gray-400 text-sm light:text-gray-600">
-            Made with ❤ by Faraz Alam
+              Made with ❤ by <span className="text-[yellow] font-medium">Faraz Alam</span>
             </p>
           </div>
         </div>

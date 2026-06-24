@@ -65,8 +65,7 @@ export const projects: Project[] = [
     bullets: [
       "Developed a dynamic corporate website with CMS-driven content management, enabling seamless content updates through an administrative dashboard.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/Karsaaz EBS Corporate Website.jpeg",
     technologies: ["Next.js", "Tailwind CSS", "Material UI"],
     githubLink: "#",
     liveLink: "https://karsaazebs.com",
@@ -79,8 +78,7 @@ export const projects: Project[] = [
     bullets: [
       "Developed a dynamic fintech platform integrated with an admin panel, allowing non-technical teams to update content without developer involvement.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/Karsaaz EBS Fintech.jpeg",
     technologies: ["Next.js", "Tailwind CSS", "Material UI"],
     githubLink: "#",
     liveLink: "https://webtest.karsaazsolutions.com",
@@ -93,8 +91,7 @@ export const projects: Project[] = [
     bullets: [
       "Developed a dynamic digital wallet platform with admin-managed content and responsive user interfaces.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/Karsaaz Wallet.jpeg",
     technologies: ["Next.js", "Tailwind CSS", "Material UI"],
     githubLink: "#",
     liveLink: "https://karsaazwallet.com",
@@ -107,8 +104,7 @@ export const projects: Project[] = [
     bullets: [
       "Developed a responsive website showcasing AI-powered agent solutions and business automation services.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/Karsaaz Agent Platform.jpeg",
     technologies: ["Next.js", "Tailwind CSS", "Material UI"],
     githubLink: "#",
     liveLink: "https://www.karsaazagent.com",
@@ -121,8 +117,7 @@ export const projects: Project[] = [
     bullets: [
       "Designed and developed a modern photography portfolio website showcasing creative work and services.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/FS Visuals Photography Website.jpeg",
     technologies: ["Next.js", "Tailwind CSS"],
     githubLink: "#",
     liveLink: "https://www.thefsvisuals.com",
@@ -136,8 +131,7 @@ export const projects: Project[] = [
       "Built a fully responsive fashion e-commerce frontend with product listing, filtering, and cart system.",
       "Integrated WhatsApp-based order flow for direct customer-to-seller communication.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/Zanora Fashion – E-Commerce Platform.jpeg",
     technologies: ["Next.js", "Tailwind CSS", "Redux"],
     githubLink: "#",
     liveLink: "https://zanora-fashion-pqzedr7jn-faraz-alams-projects-9d827bcd.vercel.app",
@@ -150,8 +144,7 @@ export const projects: Project[] = [
     bullets: [
       "Developed a fintech-style budget calculator web application for income vs expense tracking and financial planning.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/Budget Calculator.jpeg",
     technologies: ["Next.js", "Tailwind CSS"],
     githubLink: "#",
     liveLink: "https://fintech-budget-portal.vercel.app",
@@ -164,8 +157,7 @@ export const projects: Project[] = [
     bullets: [
       "Designed and developed a personal portfolio website showcasing projects, skills, and experience with a clean UI.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&h=400",
+    image: "/project_images/Personal Portfolio.jpeg",
     technologies: ["Next.js", "Tailwind CSS"],
     githubLink: "#",
     liveLink: "https://farazalamportfolio.vercel.app",

@@ -1,5 +1,8 @@
+import { Monitor, Server, Code2, ExternalLink } from 'lucide-react';
 import { certifications, CERTIFICATES_DRIVE_LINK } from '@/data/certifications';
-import { ExternalLink } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+
+const certIcons: LucideIcon[] = [Monitor, Server, Code2];
 
 export default function CertificationsSection() {
   return (
@@ -13,21 +16,24 @@ export default function CertificationsSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {certifications.map((cert, index) => (
-            <div
-              key={index}
-              className="bg-[rgb(30,30,30)] p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 light:bg-white light:border light:border-gray-200 text-center"
-            >
-              <div className="flex justify-center mb-4">
-                <div className="w-16 h-16 bg-[yellow] rounded-full flex items-center justify-center">
-                  <span className="text-[rgb(30,30,30)] text-2xl">{cert.icon}</span>
+          {certifications.map((cert, index) => {
+            const Icon = certIcons[index] ?? Code2;
+            return (
+              <div
+                key={index}
+                className="bg-[rgb(30,30,30)] p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 light:bg-white light:border light:border-gray-200 text-center"
+              >
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-[yellow] rounded-full flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-[rgb(30,30,30)]" />
+                  </div>
                 </div>
+                <h3 className="text-xl font-semibold text-[yellow] mb-2">{cert.title}</h3>
+                <p className="text-white font-medium mb-3 light:text-gray-800">{cert.organization}</p>
+                <p className="text-gray-500 text-sm light:text-gray-500">{cert.description}</p>
               </div>
-              <h3 className="text-xl font-semibold text-[yellow] mb-2">{cert.title}</h3>
-              <p className="text-white font-medium mb-3 light:text-gray-800">{cert.organization}</p>
-              <p className="text-gray-500 text-sm light:text-gray-500">{cert.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Google Drive Link */}

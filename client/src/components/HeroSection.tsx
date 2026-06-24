@@ -1,4 +1,4 @@
-import { Mail, Download } from "lucide-react";
+import { Mail, Download, Code2 } from "lucide-react";
 
 const RESUME_URL = "/Faraz_BSCS_UoK_UBIT.pdf";
 
@@ -73,9 +73,9 @@ export default function HeroSection() {
               style={{ objectPosition: '20% 20%' }}
             />
 
-            {/* Floating React Icon */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[yellow] rounded-full flex items-center justify-center text-[rgb(30,30,30)] font-bold text-xl animate-bounce">
-              ⚛️
+            {/* Floating Icon */}
+            <div className="absolute -top-4 -right-4 w-16 h-16 bg-[yellow] rounded-full flex items-center justify-center text-[rgb(30,30,30)] animate-bounce shadow-lg">
+              <Code2 className="w-7 h-7" />
             </div>
           </div>
         </div>
