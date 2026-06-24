@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin, Twitter, Phone } from 'lucide-react';
 import { useEmailJS } from '@/hooks/use-emailjs';
 import { useToast } from '@/hooks/use-toast';
 
@@ -56,6 +56,7 @@ export default function ContactSection() {
   };
 
   const contactInfo = [
+    { icon: Phone,    title: 'Phone',    value: '03273129464',                 link: 'tel:+923273129464' },
     { icon: Mail,     title: 'Email',    value: 'farazalam706@gmail.com',      link: 'mailto:farazalam706@gmail.com' },
     { icon: Github,   title: 'GitHub',   value: 'github.com/the-farazz',       link: 'https://github.com/the-farazz' },
     { icon: Linkedin, title: 'LinkedIn', value: 'linkedin.com/in/the-farazz',  link: 'https://www.linkedin.com/in/the-farazz/' },
