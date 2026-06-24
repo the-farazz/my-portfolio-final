@@ -83,13 +83,13 @@ export default function SkillsSection() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-[yellow]">Languages & Frontend</h3>
+            <h3 className="text-xl font-semibold mb-6 text-[yellow]">Frontend Technologies</h3>
             <div className="space-y-5">
               {frontendSkills.map((skill, i) => <SkillBar key={skill.name} skill={skill} index={i} />)}
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-[yellow]">Tools & Frameworks</h3>
+            <h3 className="text-xl font-semibold mb-6 text-[yellow]">Backend & Tools</h3>
             <div className="space-y-5">
               {toolsSkills.map((skill, i) => <SkillBar key={skill.name} skill={skill} index={i} />)}
             </div>
