@@ -1,10 +1,6 @@
-import { Eye, Mail, Download } from "lucide-react";
-import DP from "@/asset/DP.jpeg";
-import DP2 from "@/asset/DP2.jpg";
-import DP3 from "@/asset/DP3.jpg";
-import resume from "../asset/Faraz(BSCS)-UoK-UBIT.pdf";
-import resume2 from "../../public/Faraz(BSCS)-UoK-UBIT.pdf";
-import Test from "../asset/Test";
+import { Mail, Download } from "lucide-react";
+
+const RESUME_URL = "/Faraz_BSCS_UoK_UBIT.pdf";
 
 export default function HeroSection() {
   const handleScrollToSection = (sectionId: string) => {
@@ -40,15 +36,15 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-         
+
             <a
-              href={resume2}
-              download="Faraz(BSCS)-UoK-UBIT"
+              href={RESUME_URL}
+              download="Faraz_BSCS_UoK_UBIT"
               className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center light:bg-gray-900 light:text-white light:hover:bg-[yellow] light:hover:text-gray-900"
             >
-           
-                <Download className="w-4 h-4 mr-2" />
-                Resume
+
+              <Download className="w-4 h-4 mr-2" />
+              Resume
             </a>
             {/* <button
               onClick={() => handleScrollToSection('#projects')}
@@ -71,9 +67,10 @@ export default function HeroSection() {
         <div className="flex justify-center lg:justify-end fade-in">
           <div className="relative">
             <img
-              src={DP2}
+              src="/DP4.jpeg"
               alt="Faraz Alam - Front-End Developer"
               className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-[yellow] shadow-2xl"
+              style={{ objectPosition: '20% 20%' }}
             />
 
             {/* Floating React Icon */}

@@ -1,12 +1,13 @@
 import { experiences } from '@/data/experience';
 
 export default function ExperienceSection() {
-
   return (
     <section id="experience" className="py-20 px-4 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white light:text-gray-900">Professional Experience</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white light:text-gray-900">
+            Professional Experience
+          </h2>
           <div className="w-20 h-1 bg-[yellow] mx-auto"></div>
         </div>
 
@@ -19,17 +20,28 @@ export default function ExperienceSection() {
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <div key={index} className="relative flex items-start">
-                <div className={`absolute left-6 w-4 h-4 rounded-full border-4 border-[rgb(30,30,30)] hidden md:block ${
-                  exp.current ? 'bg-[yellow]' : 'bg-gray-400'
-                }`}></div>
+                <div
+                  className={`absolute left-6 w-4 h-4 rounded-full border-4 border-[rgb(30,30,30)] hidden md:block ${
+                    exp.current ? 'bg-[yellow]' : 'bg-gray-400'
+                  }`}
+                ></div>
                 <div className="md:ml-20 bg-[rgb(40,40,40)] p-6 rounded-xl w-full hover:shadow-xl transition-shadow duration-300 light:bg-white light:border light:border-gray-200">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <h3 className={`text-xl font-semibold ${exp.current ? 'text-[yellow]' : 'text-white light:text-gray-900'}`}>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+                    <h3
+                      className={`text-xl font-semibold ${
+                        exp.current ? 'text-[yellow]' : 'text-white light:text-gray-900'
+                      }`}
+                    >
                       {exp.title}
                     </h3>
-                    <span className="text-sm text-gray-400 font-medium light:text-gray-500">{exp.period}</span>
+                    <span className="text-sm text-gray-400 font-medium light:text-gray-500">
+                      {exp.period}
+                    </span>
                   </div>
-                  <h4 className="text-lg text-gray-300 font-medium mb-3 light:text-gray-600">{exp.company}</h4>
+                  <h4 className="text-lg text-gray-300 font-medium mb-1 light:text-gray-600">
+                    {exp.company}
+                  </h4>
+                  <p className="text-sm text-gray-500 mb-3 light:text-gray-500">{exp.location}</p>
                   <p className="text-gray-400 leading-relaxed mb-4 light:text-gray-500">
                     {exp.description}
                   </p>
@@ -43,8 +55,8 @@ export default function ExperienceSection() {
                       <span
                         key={i}
                         className={`px-3 py-1 text-sm rounded-full border ${
-                          exp.current 
-                            ? 'bg-[rgb(30,30,30)] text-[yellow] border-[yellow]' 
+                          exp.current
+                            ? 'bg-[rgb(30,30,30)] text-[yellow] border-[yellow]'
                             : 'bg-[rgb(30,30,30)] text-gray-300 border-gray-600 light:bg-gray-100 light:text-gray-600 light:border-gray-300'
                         }`}
                       >

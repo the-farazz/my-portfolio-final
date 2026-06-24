@@ -9,7 +9,7 @@ const ExperienceSection = lazy(() => import('@/components/ExperienceSection'));
 const ProjectsSection = lazy(() => import('@/components/ProjectsSection'));
 const SkillsSection = lazy(() => import('@/components/SkillsSection'));
 const CertificationsSection = lazy(() => import('@/components/CertificationsSection'));
-const FutureGoalsSection = lazy(() => import('@/components/FutureGoalsSection'));
+
 const HobbiesSection = lazy(() => import('@/components/HobbiesSection'));
 const ContactSection = lazy(() => import('@/components/ContactSection'));
 const Footer = lazy(() => import('@/components/Footer'));
@@ -34,7 +34,7 @@ export default function Portfolio() {
         <ProjectsSection />
         <SkillsSection />
         <CertificationsSection />
-        <FutureGoalsSection />
+
         <HobbiesSection />
         <ContactSection />
         <Footer />

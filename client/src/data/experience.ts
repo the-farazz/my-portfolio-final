@@ -1,6 +1,7 @@
 export interface Experience {
   title: string;
   company: string;
+  location: string;
   period: string;
   description: string;
   achievements: string[];
@@ -10,30 +11,31 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: "Front End Developer – Junior Developer",
+    title: "Front End Developer – Mid Level Developer",
     company: "Karsaaz Entire Business Solutions",
+    location: "Karachi, Pakistan",
     period: "Jan. 2025 – Present",
     description:
-      "Leading frontend development for complex business solutions including ERP and CRM systems.",
+      "Developing and maintaining multiple enterprise-grade platforms across ERP, fintech, and digital payment domains.",
     achievements: [
-      "• Currently building a CRM platform frontend using Next.js, consuming Java-based REST APIs connected to a PostgreSQL database, with 50+ screens including a comprehensive User Management module.",
-      "• Developed responsive ERP system interfaces using Next.js, Tailwind CSS, and Material UI, integrating with FastAPI (Python)-based REST APIs.",
-      "• Built reusable, modular component architectures to streamline development across both ERP and CRM systems.",
-      "• Collaborated closely with backend teams to ensure seamless API integration and consistent data flow.",
+      "• Developed and maintained platforms including ERP, Karsaaz EBS Corporate Website, Karsaaz EBS Fintech, Karsaaz Wallet, and Karsaaz Agent Platform using Next.js, Tailwind CSS, Material UI, and REST APIs.",
+      "• Built dynamic admin panel–driven applications, enabling teams to manage and update content independently.",
+      "• Developed responsive and scalable user interfaces for enterprise, fintech, and digital payment solutions.",
+      "• Built reusable components and collaborated with backend teams to ensure seamless API integration.",
     ],
-    technologies: ["Next.js", "Redux", "Tailwind CSS", "Material UI", "FastAPI"],
+    technologies: ["Next.js", "Tailwind CSS", "Material UI", "Redux", "REST APIs"],
     current: true,
   },
   {
     title: "Front End Developer – Internship",
     company: "Xenasys Pvt. Ltd",
+    location: "Karachi, Pakistan",
     period: "Oct. 2024 – Dec. 2024",
     description:
-      "Contributed to the development of a Franchise Management System (FMS).",
+      "Contributed to the development of a Franchise Management System (FMS) for Zong.",
     achievements: [
-      "• Developed 10+ responsive and interactive screens for the Franchise Management System using ReactJS, Tailwind CSS, and Material UI.",
-      "• Contributed to a live project, ensuring high standards for user experience and interface consistency.",
-      "• Adapted UI components to reflect evolving project requirements in an agile development environment.",
+      "• Developed and enhanced frontend modules for the Franchise Management System using ReactJS, Tailwind CSS, and Material UI.",
+      "• Contributed to a live production application, ensuring responsive and consistent user experiences.",
     ],
     technologies: ["React.js", "Tailwind CSS", "Material UI"],
     current: false,
@@ -41,12 +43,12 @@ export const experiences: Experience[] = [
   {
     title: "Front End Developer – Internship",
     company: "DevLogix",
+    location: "Karachi, Pakistan",
     period: "Jul. 2024 – Oct. 2024",
-    description: "Gained hands-on experience in building HR Management Systems.",
+    description: "Gained hands-on experience building an HR Management System from scratch.",
     achievements: [
-      "• Developed responsive, user-friendly interfaces for the HR Management System using ReactJS, Tailwind CSS, and Material UI.",
-      "• Collaborated with the team from project inception, contributing to requirement gathering and SRS documentation.",
-      "• Gained hands-on experience with the full software development lifecycle from initial planning to implementation.",
+      "• Developed responsive interfaces for the Human Resource System using ReactJS, Tailwind CSS, and Material UI.",
+      "• Contributed to requirement gathering, SRS documentation, and frontend implementation throughout the project lifecycle.",
     ],
     technologies: ["React.js", "Tailwind CSS", "Material UI", "Git"],
     current: false,

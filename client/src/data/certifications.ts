@@ -7,24 +7,27 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    title: "Front-End Development",
+    title: "Front End Web Development",
     organization: "Jawan Pakistan",
     description:
-      "Complete front-end development course covering HTML, CSS, JavaScript, and modern frameworks.",
+      "Completed Front End Web Development Course covering HTML, CSS, JavaScript, and modern frameworks.",
     icon: "💻",
   },
   {
-    title: "Back-End Development",
-    organization: "Decotech",
+    title: "Back End Development",
+    organization: "DecoTech",
     description:
-      "Complete back-end development course covering JavaScript, NodeJS and modern frameworks.",
+      "Completed Back End Development Course covering Node.js, JavaScript, and modern backend frameworks.",
     icon: "🏆",
   },
   {
-    title: "ReactJS Course",
+    title: "ReactJS Bootcamp",
     organization: "DevTown",
     description:
-      "Comprehensive React.js training covering components, hooks, state management, and modern development practices.",
+      "Completed ReactJS Bootcamp covering components, hooks, state management, and modern React development practices.",
     icon: "⚛️",
   },
 ];
+
+export const CERTIFICATES_DRIVE_LINK =
+  "https://drive.google.com/drive/folders/1Bsev4PGvp2hsA6-dFwgIlHSoBkuKgdO9";
