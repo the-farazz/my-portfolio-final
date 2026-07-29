@@ -1,0 +1,24 @@
+# Faraz Alam - Software Engineer & Web Developer
+
+> Faraz Alam is a Software Engineer and a BSCS graduate from University of Karachi - UBIT. He specializes in building high-performance, scalable web applications using modern web technologies.
+
+## Profile Summary
+- **Name**: Faraz Alam
+- **Role**: Software Engineer / Frontend Engineer
+- **Current Employer**: Karsaaz Entire Business Solutions
+- **Education**: University of Karachi - UBIT (BS in Computer Science)
+- **Phone**: +92 327 3129464 (03273129464)
+- **Portfolio Website**: https://farazalamportfolio.vercel.app/
+
+## Technical Expertise
+- **Frontend & Frameworks**: React.js, Next.js (App Router), TypeScript, JavaScript (ES6+), HTML5, CSS3
+- **Styling & Design**: Tailwind CSS, Radix UI, Responsive UI/UX Design, CSS Animations
+- **State & Data**: TanStack React Query, Redux, REST API Integration, EmailJS
+- **Tools & Engineering**: Git, GitHub, Technical SEO, Generative Engine Optimization (GEO), Web Performance
+
+## Official Profiles
+- **Portfolio**: https://farazalamportfolio.vercel.app/
+- **WhatsApp**: https://wa.me/923273129464 (+92 327 3129464)
+- **LinkedIn**: https://www.linkedin.com/in/the-farazz/
+- **GitHub**: https://github.com/the-farazz
+- **Twitter/X**: https://twitter.com/the_farazzz

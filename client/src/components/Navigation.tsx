@@ -5,7 +5,7 @@ import { useTheme } from './ThemeProvider';
 
 const navItems = [
   { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
+  { href: '#education', label: 'Education' },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
@@ -118,4 +118,3 @@ export default function Navigation() {
     </nav>
   );
 }
-

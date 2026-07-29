@@ -26,9 +26,9 @@ export default function HeroSection() {
           </p>
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white light:text-gray-900">
             I'm <span className="text-[yellow]">Faraz Alam,</span>
-          </h1>
-          <h1 className="text-4xl lg:text-6xl mb-6  text-[yellow]">
-            Software Engineer
+            <span className="block text-4xl lg:text-6xl mt-2 text-[yellow]">
+              Software Engineer & Web Developer
+            </span>
           </h1>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl light:text-gray-500">
             Building engaging digital experiences with modern web technologies.
@@ -37,23 +37,14 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-
             <a
               href={RESUME_URL}
               download="Faraz_BSCS_UoK_UBIT"
               className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center light:bg-gray-900 light:text-white light:hover:bg-[yellow] light:hover:text-gray-900"
             >
-
               <Download className="w-4 h-4 mr-2" />
               Resume
             </a>
-            {/* <button
-              onClick={() => handleScrollToSection('#projects')}
-              className="bg-white text-[rgb(30,30,30)] px-8 py-3 rounded-lg font-medium hover:bg-[yellow] transition-colors duration-300 flex items-center justify-center"
-            >
-              <Eye className="w-4 h-4 mr-2" />
-              View My Work
-            </button> */}
             <button
               onClick={() => handleScrollToSection("#contact")}
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-[rgb(30,30,30)] transition-all duration-300 flex items-center justify-center light:border-gray-900 light:text-gray-900 light:hover:bg-gray-900 light:hover:text-white"
@@ -69,7 +60,7 @@ export default function HeroSection() {
           <div className="relative">
             <img
               src="/DP4.jpeg"
-              alt="Faraz Alam - Front-End Developer"
+              alt="Faraz Alam - Software Engineer & Web Developer"
               className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-[yellow] shadow-2xl"
               style={{ objectPosition: '20% 20%' }}
             />
@@ -84,4 +75,3 @@ export default function HeroSection() {
     </section>
   );
 }
-

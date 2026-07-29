@@ -2,8 +2,10 @@
 export default function Footer() {
   const footerLinks = [
     { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
+    { href: '#education', label: 'Education' },
+    { href: '#experience', label: 'Experience' },
     { href: '#projects', label: 'Projects' },
+    { href: '#skills', label: 'Skills' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -20,7 +22,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-4 text-white light:text-gray-900">Faraz Alam</h3>
-          <p className="text-gray-400 mb-8 light:text-gray-600">Software Engineer | React.js Specialist</p>
+          <p className="text-gray-400 mb-8 light:text-gray-600">Software Engineer | React.js & Next.js Specialist</p>
           
           {/* Footer Links */}
           <div className="flex justify-center space-x-8 mb-8">
@@ -45,4 +47,3 @@ export default function Footer() {
     </footer>
   );
 }
-

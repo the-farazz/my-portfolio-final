@@ -1,6 +1,25 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build output
+.next/
+**/ .next/
+client/.next/
+dist/
+**/dist/
+
+# OS / Editor
 .DS_Store
+Thumbs.db
+.vscode/
+
+# Logs & Local Env
+*.log
+.env*.local
+.env
+
+# Other
 server/public
 vite.config.ts.*
 *.tar.gz

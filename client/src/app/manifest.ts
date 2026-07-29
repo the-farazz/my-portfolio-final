@@ -1,0 +1,22 @@
+import type { MetadataRoute } from 'next';
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'Faraz Alam | Software Engineer Portfolio',
+    short_name: 'Faraz Alam',
+    description:
+      'Portfolio of Faraz Alam - Software Engineer specializing in React.js, Next.js, TypeScript, and modern web development.',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#0f172a',
+    theme_color: '#0f172a',
+    icons: [
+      {
+        src: '/DP4.jpeg',
+        sizes: '192x192 512x512',
+        type: 'image/jpeg',
+        purpose: 'any',
+      },
+    ],
+  };
+}
